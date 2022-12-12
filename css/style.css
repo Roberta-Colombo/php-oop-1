@@ -1,0 +1,44 @@
+header {
+    height: 150px;
+    border-bottom: 2px solid rgb(74, 72, 72);
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(22, 17, 17);
+    color: white;
+}
+
+.container {
+    padding-top: 50px;
+}
+.card {
+    background-color: rgb(22, 17, 17);
+    border-color: white;
+    color: white;
+}
+
+.card-img {
+   height: 600px;
+   object-position: center;
+   object-fit: cover;
+}
+
+h2 {
+    padding-top: 60px;
+}
+
+h4 {
+    padding-top: 10px;
+}
+
+main {
+    padding-bottom: 150px;
+    background-color: rgb(22, 17, 17);
+}
+
+.age {
+    padding: 15px 0;
+}
+
+.genre {
+    padding-bottom: 15px;
+}
