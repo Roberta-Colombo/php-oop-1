@@ -6,17 +6,17 @@ class Movie
     public $title;
     public $director;
     public $year;
-    public $genre;
+    public $genres;
     public $rating;
 
 
     // constructor
-    function __construct(string $_title, string $_director, int $_year, string $_genre, string $_rating)
+    function __construct(string $_title, string $_director, int $_year, string $_rating, $_genres = [])
     {
         $this->title = $_title;
         $this->director = $_director;
         $this->year = $_year;
-        $this->genre = $_genre;
+        $this->genres = $_genres;
         $this->rating = $_rating;
 
         // effettua controllo età durante instanziamento
@@ -36,13 +36,13 @@ class Movie
 
 
 // oggetti istanziati e stampati a schermo
-$theShining = new Movie("The Shining", "Stanley Kubrick", 1980, "Horror", "18+");
+$theShining = new Movie("The Shining", "Stanley Kubrick", 1980, "18+", ["Horror", "Thriller"]);
 var_dump($theShining);
 
-$fightClub = new Movie("Fight Club", "David Fincher", 1999, "Drammatico", "15+");
+$fightClub = new Movie("Fight Club", "David Fincher", 1999, "15+", ["Drammatico"]);
 var_dump($fightClub);
 
-$laGrandeBellezza = new Movie("La grande bellezza", "Paolo Sorrentino", 2013, "Drammatico", "17+");
+$laGrandeBellezza = new Movie("La grande bellezza", "Paolo Sorrentino", 2013, "17+", ["Drammatico", "Commedia"]);
 var_dump($laGrandeBellezza);
 
 ?>
